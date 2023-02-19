@@ -1,0 +1,214 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    
+  }
+  
+  a{
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+  }
+  
+  img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    max-width: 50%;
+    height: 68%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Layout */
+  header {
+    background-color: rgb(9, 0, 0);
+    box-shadow: 0 2px 5px rgb(14, 0, 0);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  
+  main {
+     max-width: 1200px;
+    margin: -10px;
+    padding: 50px 20px; 
+    
+  }
+  
+  
+  section {
+    margin-bottom: 27px;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section ul li {
+    margin-bottom: 20px;
+  }
+  
+  section img {
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Media Queries */
+  @media screen and (min-width: 768px) {
+    nav ul li {
+      margin-right: 40px;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 40px;
+    }
+  
+    section {
+      margin-bottom: 0;
+    }
+  
+    section:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .p1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  }
+ 
+.block{
+    position: relative;
+    margin: 300px auto 0;
+    width: 32%;
+    margin: 4Px;
+    color: rgb(243, 237, 237);
+    height: 33px;
+    background: linear-gradient(0deg, #000, #272727);
+    }
+    
+    .block:before, .block:after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+            #0000ff, #00ff00,#ffff00, #ff0000);
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 20s linear infinite;
+    }
+    
+    @keyframes steam {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+    
+    .block:after {
+        filter: blur(50px);
+    }
+  
+
+    .contact-bar {
+        background-color: rgb(251, 251, 251);
+        color: rgb(17, 1, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .contact-bar a {
+        text-decoration: none;
+        color: rgb(4, 0, 0);
+        margin-right: 20px;
+        font-size: 1.5em;
+      }
+      
+      .contact-bar span {
+        margin-left: 20px;
+        font-size: 1.2em;
+      }
+      
+      /* apply this to the container you want to animate */
+
+.contact-bar  {
+    background: linear-gradient(-45deg, #565a5c, #c7dc28, #e9a1d1);
+    background-size: 400% 400%;
+    animation: gradient-bg 10s ease infinite;
+    height: 30px;
+    border-radius: 11px;
+}
+
+@keyframes contact-bar-bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
